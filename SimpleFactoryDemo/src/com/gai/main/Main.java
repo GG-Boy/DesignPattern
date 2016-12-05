@@ -9,11 +9,11 @@ public class Main {
 	public static void main(String[] args) {
 		try {
 			Scanner scanner = new Scanner(System.in);
-			System.out.println("ÇëÊäÈëÊı×ÖA");
+			System.out.println("è¯·è¾“å…¥æ•°å­—A:");
 			String strNumberA = scanner.nextLine();
-			System.out.println("ÇëÊäÈëÔËËã·ûºÅ(+,-,*,/)");
+			System.out.println("è¯·é€‰æ‹©è¿ç®—ç¬¦å·(+,-,*,/)");
 			String strOperate = scanner.nextLine();
-			System.out.println("ÇëÊäÈëÊı×ÖB");
+			System.out.println("è¯·è¾“å…¥æ•°å­—B:");
 			String strNumberB = scanner.nextLine();
 			
 			Operation oper = OperationFactory.createOperate(strOperate);
@@ -21,11 +21,11 @@ public class Main {
 			oper.setNumberB(Double.parseDouble(strNumberB));
 			double result = oper.GetResult();
 			
-			System.out.println("½á¹ûÊÇ£º"+result);
+			System.out.println("ç»“æœæ˜¯"+result);
 			scanner.close();
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("ÄãµÄÊäÈëÓĞ´í");
+			System.out.println("æ‚¨çš„è¾“å…¥æœ‰é”™");
 		}
 	}
 

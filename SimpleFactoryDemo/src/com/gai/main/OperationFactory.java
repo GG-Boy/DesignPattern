@@ -7,7 +7,7 @@ import com.gai.operation.OperationMul;
 import com.gai.operation.OperationSub;
 
 /**
- * �򵥹���ģʽ
+ * 简单工厂模式
  * @author gai_gong_ext
  *
  */

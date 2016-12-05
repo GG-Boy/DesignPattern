@@ -6,7 +6,7 @@ public class OperationDiv extends Operation {
 	public double GetResult() throws Exception {
 		double result = 0;
 		if (getNumberB()==0) {
-			throw new Exception("³ıÊı²»ÄÜÎª0");
+			throw new Exception("é™¤æ•°ä¸èƒ½ä¸º0");
 		}
 		result = getNumberA() / getNumberB();
 		return result;
