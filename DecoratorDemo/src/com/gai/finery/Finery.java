@@ -9,7 +9,7 @@ public class Finery extends Person {
 	public void Decorate(Person person) {
 		this.person = person;
 	}
-
+	
 	@Override
 	public void show() {
 		if (person!=null) {

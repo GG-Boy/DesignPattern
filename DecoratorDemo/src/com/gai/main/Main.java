@@ -1,7 +1,6 @@
 package com.gai.main;
 
 import com.gai.finery.BigTrouser;
-import com.gai.finery.Finery;
 import com.gai.finery.LeatherShoes;
 import com.gai.finery.Sneakers;
 import com.gai.finery.Suit;
@@ -15,21 +14,21 @@ public class Main {
 		Person person = new Person("小明");
 		
 		System.out.println("第一种装扮：");
-		Finery dtx = new TShirts();
-		Finery kk = new BigTrouser();
-		Finery qx = new Sneakers();
+		TShirts dtx = new TShirts();
+		BigTrouser kk = new BigTrouser();
+		Sneakers qx = new Sneakers();
 		qx.Decorate(person);
-		kk.Decorate(person);
-		dtx.Decorate(person);
+		kk.Decorate(qx);
+		dtx.Decorate(kk);
 		dtx.show();
 		
 		System.out.println("第二种装扮：");
-		Finery xz = new Suit();
-		Finery ld = new Tie();
-		Finery px = new LeatherShoes();
+		Suit xz = new Suit();
+		Tie ld = new Tie();
+		LeatherShoes px = new LeatherShoes();
 		px.Decorate(person);
-		ld.Decorate(person);
-		xz.Decorate(person);
+		ld.Decorate(px);
+		xz.Decorate(ld);
 		xz.show();
 	}
 
